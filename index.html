@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>S P L I<br>T T E R</h1>
+  <section class="container">
+
+    <main>
+      <section class="content1">
+        <article >
+          <p>Bill</p> <p id=" cant"></p>
+          <input class="input" type="text" placeholder="$ 0">
+        </article>
+
+        <article class="select">
+          <p>Select Tip %</p>
+          <article class="percentage1">
+            <div class="percentage"><p>5%</p></div>
+            <div class="percentage"><p>10%</p></div>
+            <div class="percentage"><p>15%</p></div>
+          </article>
+          <article class="percentage2">
+            <div class="percentage"><p>25%</p></div>
+            <div class="percentage"><p>50%</p></div>
+            <input id="custom" type="text" placeholder="Custom"></input>
+        </article>
+        </article>
+
+        <article>
+          <p class="cant " >Number of People</p>
+          <input class="input" type="text" placeholder="0">
+        </article>
+      </section>
+
+
+      <section class="content2">
+        <div class="tip">
+          <p><strong>Tip Amount</strong> <br>
+          / person</p>
+
+          <p class="value">$0.00</p>
+          <p id="outresposta"></p>
+        </div>
+        <div class="total">
+          <p>
+            <strong>Total</strong> <br>
+            / person
+          </p>
+          <p class="value">$0.00</p>
+          <p id="resposta"></p>
+        </div>
+        <button id="btn">Reset</button>
+      </section>
+  </section>
+</main>
+
+
+
+
+
+
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Amanda cauponi</a>.
+    </div> -->
+  <script src="./app.js"></script>
+</body>
+
+</html>

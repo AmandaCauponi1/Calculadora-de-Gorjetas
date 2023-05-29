@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+main{
+    margin: 6rem;
+    width: 43vw;
+    height: 40vh;
+    background-color:hsl(0, 0%, 100%);
+    display: flex;
+   justify-content: space-around;
+    max-width: 1440px;
+    min-width: 375px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.363);
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    gap: 2rem;
+    font-family: sans-serif;
+    width: 50vw; 
+}
+.content1 > p{
+    font-size: 2rem;
+}
+.content1 input{
+    height: 2rem;
+    width: 20rem;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+input ::placeholder{
+    color:  hsl(183, 100%, 15%);
+}
+/* input:focus{
+    outline: 1px solid red;
+} */
+
+.select{
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+.percentage{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+    height: 2rem;
+    width: 4rem;
+    cursor: pointer;
+}
+/* .percentage:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+} */
+.percentage p{
+    font-size: 1.3rem;
+}
+.percentage1{
+    display: flex;
+    gap: 5px;
+   
+}
+.percentage2{
+    display: flex;
+    gap: 5px;
+}
+#custom{
+    background-color: hsl(189, 41%, 97%);
+    color:  hsl(183, 100%, 15%);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    border-radius: 3px;
+    height: 2rem;
+    width: 4rem;
+    cursor: pointer;
+}
+.content2{
+     width: 40vw;
+    
+    border-radius: 20px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 2rem;
+    margin: 2rem;
+   font-size: 1.2rem;
+   font-family: sans-serif;
+}
+.value{
+    color: hsl(172, 67%, 45%);
+    font-size: 2rem;
+}
+button{
+    background-color: hsl(172, 67%, 45%);
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(185, 41%, 84%);
+}
+.tip{
+    display: flex;
+    justify-content: space-around;
+}
+.total{
+    display: flex;
+    justify-content: space-around;
+    gap: 22px;
+}
+@media (max-width: 1440px){
+    main{
+        width: 44rem;
+    }
+    .content1{
+        width: 40vw;
+        height: 30vh;
+       margin-top: 2rem;
+    }
+    .content2{
+        width: 40vw;
+        height: 30vh;
+    }
+}
+@media (max-width: 778px){
+   main{
+   height: 40rem;
+   width: 50vw;
+   display: flex;
+   flex-direction: column;
+  gap: 15px;
+   }
+   .content2{
+    width: 80%;
+   }
+}
+@media (max-width: 440px){
+   body{
+    width:100%;
+    height: 100%;
+    margin-top: 15px;
+   }
+   main{
+    height: 35rem;
+    width: 4rem;
+    margin: 0;
+    font-size: 1rem;
+   }
+}
+
